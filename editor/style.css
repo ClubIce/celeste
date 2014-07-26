@@ -1,0 +1,36 @@
+body {
+  font-size:10px;
+}
+
+fieldset {
+  border-radius: 6px;
+  float:left;
+  border: 1px solid #ddd;
+}
+
+#tileset-editor-tabs {
+  display: inline-block;
+  width: 350px;
+  margin-top:6px;
+}
+
+#tileset-editor-layers {
+  width: 170px
+}
+
+#tileset-editor-layer-editor-container {
+  float:left;
+}
+
+#tileset-editor-layer-editor-container fieldset {
+  float: none;
+}
+
+#tileset-editor-graphic-select-button {
+
+}
+
+.transparent{
+  background: url("images/transparency.png");
+  display:inline-block;
+}

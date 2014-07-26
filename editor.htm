@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Celeste Editor</title>
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.min.js"></script>
+    <script src="kineticjs/kinetic-v5.1.0.min.js"></script>
+    <script src="editor/app.js"></script>
+    <link href="jquery/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="jquery/jquery-ui.structure.min.css" rel="stylesheet" type="text/css" />
+    <link href="jquery/jquery-ui.theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="editor/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="tileset-editor-dialog" title="Editor de Tileset">
+        <div id="tileset-editor-menu-bar">
+          <button title="Nuevo" id="tileset-editor-new-button"><img src="editor/images/asterisk_orange.png" /></button>
+          <button title="Abrir" id="tileset-editor-open-button"><img src="editor/images/folder_go.png" /></button>
+          <button title="Guardar" id="tileset-editor-save-button"><img src="editor/images/accept.png" /></button>
+        </div>
+        <fieldset>
+          <legend>Tiles</legend>
+          <div id="tileset-editor-tiles" class="transparent">&nbsp;</div>
+        </fieldset>
+        <div id="tileset-editor-tabs">
+          <ul>
+            <li><a href="#tileset-editor-design">Diseño</a></li>
+            <li><a href="#tileset-editor-properties">Propiedades</a></li>
+          </ul>
+          <div id="tileset-editor-design">
+            <fieldset>
+              <legend>Capas</legend>
+              <select id="tileset-editor-layers" size="13">
+                <option>&nbsp;</option>
+              </select>
+            </fieldset>
+            <div id="tileset-editor-layer-editor-container">
+              <fieldset>
+                <legend>Vista Previa</legend>
+                <div id="tileset-editor-tile-preview" class="transparent">&nbsp;</div>
+              </fieldset>
+              <fieldset>
+                <legend>Editor de Capa</legend>
+                <div id="tileset-editor-layer-editor" class="transparent">&nbsp;</div>
+              </fieldset>
+              <fieldset>
+                <legend>Efectos</legend>
+                <div id="tileset-editor-buttons">
+                  <input type="checkbox" id="tileset-editor-vertical-flip" />
+                  <label for="tileset-editor-vertical-flip"><img src="editor/images/flip-vertical-icon.png" /></label>
+                  <input type="checkbox" id="tileset-editor-horizontal-flip" />
+                  <label for="tileset-editor-horizontal-flip"><img src="editor/images/flip-horizontal-icon.png" /></label>
+                </div>
+                <label for="tileset-editor-tone-slider">Tono: </label>
+                <span id="tileset-editor-tone-value">0</span><div id="tileset-editor-tone-slider">&nbsp;</div>
+                <select id="tileset-editor-rotate">
+                  <option value="0">Girar 0°</option>
+                  <option value="90">Girar 90°</option>
+                  <option value="180">Girar 180°</option>
+                  <option value="270">Girar 270°</option>
+                </select>
+              </fieldset>
+            </div>
+          </div>
+          <div id="tileset-editor-properties">
+            
+          </div>
+        </div>
+        <fieldset style="float: none">
+          <legend>Graficos</legend>
+          <div id="tileset-editor-graphic-buttons">
+          <select id="tileset-editor-graphic-select">
+            <option>&nbsp;</option>
+          </select>
+            <button title="Agregar" id="tileset-editor-add-graphic-button"><img src="editor/images/add.png" /></button>
+            <button title="Reemplazar" id="tileset-editor-replace-graphic-button"><img src="editor/images/arrow_refresh.png" /></button>
+            <button title="Remover" id="tileset-editor-remove-graphic-button"><img src="editor/images/cancel.png" /></button>
+          </div>
+          <div id="tileset-editor-graphic-viewer" class="transparent">&nbsp;</div>
+        </fieldset>
+      </div>
+    </div>
+  </body>
+</html>
